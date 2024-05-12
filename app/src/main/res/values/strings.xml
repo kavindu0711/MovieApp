@@ -1,0 +1,82 @@
+<resources>
+    <!--    Avatar Activity-->
+    <string name="AVA_1">Duration : 2 hours\nCatogory : comics\nRelesed date : july 19 2011</string>
+
+
+    <!--    Details_Activity_Srings-->
+    <string name="d_1">Avengers</string>
+    <string name="d_3">name : Avenger\n duration : 2hours\ncatogery : comics\nRelesed date : july 19 2011</string>
+    <string name="d_4">Watch now</string>
+
+    <!--    Edit_Profile_Activity-->
+    <string name="EP_1">edit profile</string>
+    <string name="EP_2">change profile picture</string>
+    <string name="EP_3">enter name</string>
+    <string name="EP_4">enter email</string>
+    <string name="EP_5">enter old password</string>
+    <string name="EP_6">enter new password</string>
+    <string name="EP_7">save changes</string>
+
+    <!--Favourite Movie-->
+    <string name="F_1">Favorite Movies</string>
+    <string name="F_2">Avatar</string>
+    <string name="F_3">Watch again</string>
+
+    <!--    Intro_Activity_Strings-->
+    <string name="app_name">Lab Exam 2</string>
+    <string name="intro_1">Watch Videos in\nReality</string>
+    <string name="intro_2">Download and Watch offline\n wherever You are</string>
+    <string name="intro_btn">Start</string>
+
+    <!--    Login_Activity_Strings-->
+    <string name="l_text_1">Log in</string>
+    <string name="l_text_2">Username</string>
+    <string name="l_text_3">Password</string>
+    <string name="l_text_4">Forget your Password?</string>
+    <string name="l_login_btn_text">Login</string>
+    <string name="l_text_5">Don\'t have an account?</string>
+    <string name="l_text_6">Register now</string>
+
+    <!--    Main_Activity_Strings-->
+    <string name="m_1">What would you like to watch?</string>
+    <string name="m_2">Search Movies...</string>
+    <string name="m_3">New Movies</string>
+    <string name="m_4">Avengers</string>
+    <string name="m_5">Dark</string>
+
+    <!--    Paid_Movie_Activity-->
+    <string name="PM_1">Paid Movies</string>
+    <string name="PM_2">Price: $9.99</string>
+    <string name="PM_3">Purchase</string>
+
+    <!--    Profie_Activity-->
+    <string name="PA_1">My Profile</string>
+    <string name="PA_2">Username: Kavindu_Laxan</string>
+    <string name="PA_3">Email: kavindu@gmail.com</string>
+    <string name="PA_4">Favorite Genres: Action, Comedy, Drama</string>
+    <string name="PA_5">Age: 24</string>
+    <string name="PA_6">Location: Sri Lanka</string>
+    <string name="PA_7">Bio: Movie lover, cinephile, aspiring filmmaker.</string>
+    <string name="PA_8">Recently Viewed</string>
+
+    <!--    Purchase_Activity-->
+    <string name="PUR_1">Recently Viewed</string>
+    <string name="PUR_2">Payment Method</string>
+    <string name="PUR_3">Credit Card</string>
+    <string name="PUR_4">PayPal</string>
+    <string name="PUR_5">Google Pay</string>
+    <string name="PUR_6">Apple Pay</string>
+
+    <!--    Purchase_Confirmation_Activity-->
+    <string name="PC_1">Purchase Confirmation</string>
+    <string name="PC_2">Thank you for your purchase!</string>
+    <string name="PC_3">Continue</string>
+
+    <!--    Signup_Activity_Strings-->
+    <string name="S_text_1">Sign in</string>
+    <string name="S_text_2">Username</string>
+    <string name="S_text_3">Email</string>
+    <string name="S_text_4">Password</string>
+    <string name="S_text_5">Confirm Password</string>
+    <string name="S_sign_btn_text">Sign In</string>
+</resources>

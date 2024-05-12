@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_background"
+    tools:context=".PaidMovieActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gradient_color_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Header -->
+            <TextView
+                android:id="@+id/textViewHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/PM_1"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:padding="16dp"
+                android:gravity="center"
+                android:textColor="@color/white"/>
+
+            <!-- Paid Movie List -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <!-- Individual Paid Movie Item -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:background="@drawable/search_edit_background"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="10dp">
+
+                    <!-- Movie Poster -->
+                    <ImageView
+                        android:id="@+id/imageViewPoster"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_margin="10dp"
+                        android:src="@drawable/ava"/>
+
+                    <!-- Movie Details -->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <!-- Movie Title -->
+                        <TextView
+                            android:id="@+id/textViewMovieTitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/F_2"
+                            android:textColor="@color/white"
+                            android:textSize="20sp"
+                            android:textStyle="bold"/>
+
+                        <!-- Movie Description -->
+                        <TextView
+                            android:id="@+id/textViewMovieDescription"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/AVA_1"
+                            android:textColor="@color/white"
+                            android:textSize="16sp"/>
+
+                        <!-- Price -->
+                        <TextView
+                            android:id="@+id/textViewPrice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/PM_2"
+                            android:textColor="@color/white"
+                            android:textSize="16sp"/>
+
+                        <!-- Purchase Button -->
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/pubutton"
+                            style="@android:style/Widget.Button"
+                            android:background="@drawable/btn_background"
+                            android:layout_marginTop="20dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/PM_3"
+                            android:textStyle="bold"
+                            android:textColor="@color/white"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

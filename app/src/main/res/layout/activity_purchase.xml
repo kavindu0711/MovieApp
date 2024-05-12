@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_background"
+    tools:context=".PurchaseActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gradient_color_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Header -->
+            <TextView
+                android:id="@+id/textViewHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/PUR_1"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:padding="16dp"
+                android:gravity="center"
+                android:textColor="@color/white"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <!-- Movie Poster -->
+            <ImageView
+                android:id="@+id/imageViewPoster"
+                android:layout_width="150dp"
+                android:layout_height="200dp"
+                android:src="@drawable/ava"
+                android:layout_marginTop="16dp"
+                app:layout_constraintTop_toBottomOf="@id/textViewHeader"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+            <!-- Movie Title -->
+            <TextView
+                android:id="@+id/textViewMovieTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/F_2"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:layout_marginTop="16dp"
+                android:textColor="@color/white"
+                app:layout_constraintTop_toBottomOf="@id/imageViewPoster"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+            <!-- Movie Description -->
+            <TextView
+                android:id="@+id/textViewMovieDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/AVA_1"
+                android:textColor="@color/white"
+                android:textSize="16sp"/>
+
+            <!-- Price -->
+            <TextView
+                android:id="@+id/textViewPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/PM_2"
+                android:textSize="16sp"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/white"
+                app:layout_constraintTop_toBottomOf="@id/textViewMovieTitle"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+            <!-- Payment Method -->
+            <TextView
+                android:id="@+id/textViewPaymentMethod"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/PUR_2"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:layout_marginTop="16dp"
+                android:textColor="@color/white"
+                app:layout_constraintTop_toBottomOf="@id/textViewPrice"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+            <!-- Payment Options -->
+            <RadioGroup
+                android:id="@+id/radioGroupPaymentOptions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="8dp">
+
+                <RadioButton
+                    android:id="@+id/radioButtonCreditCard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/PUR_3"
+                    android:textColor="@color/white"/>
+
+                <RadioButton
+                    android:id="@+id/radioButtonPayPal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/PUR_4"
+                    android:textColor="@color/white"/>
+
+                <!-- Additional Payment Options -->
+                <RadioButton
+                    android:id="@+id/radioButtonGooglePay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/PUR_5"
+                    android:textColor="@color/white"/>
+
+                <RadioButton
+                    android:id="@+id/radioButtonApplePay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/PUR_6"
+                    android:textColor="@color/white"/>
+
+            </RadioGroup>
+
+            <!-- Purchase Button -->
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/purchasebutton"
+                style="@android:style/Widget.Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/PM_3"
+                android:textColor="@color/white"
+                android:background="@drawable/btn_background"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="24dp"
+                app:layout_constraintTop_toBottomOf="@id/radioGroupPaymentOptions"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
